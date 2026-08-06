@@ -1,6 +1,7 @@
 import pytest
 import requests
-
+# 第六天收获：学会了用 requests.post(json=) 发送创建请求，
+# 断言状态码 201，并用参数化跑不同 body 数据。
 POST_DATA = [
     {"title": "foo", "body": "bar", "userId": 1},
     {"title": "hello", "body": "world", "userId": 2},

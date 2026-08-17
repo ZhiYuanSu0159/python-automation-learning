@@ -6,7 +6,7 @@ from pygments.lexers import data
 from config.settings import SINGLE_POST_URL
 
 
-@allure.feature("GET 请求测测试")
+@allure.feature("GET 请求测试")
 class TestGetPost:
 
     @allure.story("查询单个帖子")
@@ -41,4 +41,6 @@ def get_post_response():
     return response
 
 
-
+# pytest --alluredir=allure-results
+# allure generate allure-results -o allure-report --clean
+# allure open allure-report
